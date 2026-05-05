@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #0f172a; /* Azul marinho profundo */
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Estilo Glass */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 5%;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span { color: #facc15; }
+
+nav ul { display: flex; list-style: none; gap: 30px; align-items: center; }
+
+nav a { text-decoration: none; color: #cbd5e1; transition: 0.3s; }
+nav a:hover { color: #facc15; }
+
+.btn-contato {
+    background: #facc15;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Seção Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.hero h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 20px; }
+.hero h1 span { color: #facc15; }
+.hero p { max-width: 500px; color: #94a3b8; font-size: 1.1rem; margin-bottom: 30px; }
+
+.btn-primary {
+    background: #facc15;
+    color: #0f172a;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.btn-secondary {
+    border: 1px solid #475569;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* Cards de Tecnologia */
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 50px 10%;
+    justify-content: center;
+    margin-top: -100px; /* Sobreposição elegante */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover { transform: translateY(-10px); border-color: #facc15; }
+.card h3 { color: #facc15; margin-bottom: 10px; }
