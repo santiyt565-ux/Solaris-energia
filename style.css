@@ -46,3 +46,28 @@ footer { padding: 40px; text-align: center; color: #475569; }
     .hero, .infra-section { flex-direction: column; text-align: center; height: auto; padding-top: 100px; }
     .hero-image img { max-width: 300px; }
 }
+
+/* --- NOVOS ESTILOS PARA OS BOTÕES DE PLANOS --- */
+.btn-plan-link {
+    display: block;
+    background: #334155;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card-plan:hover .btn-plan-link {
+    background: #facc15;
+    color: #0f172a;
+}
+
+.highlighted .btn-plan-link {
+    background: #facc15;
+    color: #0f172a;
+}
+
